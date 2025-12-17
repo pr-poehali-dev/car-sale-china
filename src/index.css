@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,35 +6,41 @@
 
 @layer base {
   :root {
-    --background: 35 30% 93%;
-    --foreground: 90 30% 15%;
+    --background: 35 25% 95%;
+    --foreground: 90 40% 12%;
 
     --card: 0 0% 100%;
-    --card-foreground: 90 30% 15%;
+    --card-foreground: 90 40% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 90 30% 15%;
+    --popover-foreground: 90 40% 12%;
 
-    --primary: 90 30% 15%;
-    --primary-foreground: 35 30% 93%;
+    --primary: 90 40% 12%;
+    --primary-foreground: 35 25% 95%;
 
-    --secondary: 75 18% 60%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 75 20% 58%;
+    --secondary-foreground: 35 25% 95%;
 
-    --muted: 35 20% 88%;
-    --muted-foreground: 90 15% 35%;
+    --muted: 35 22% 90%;
+    --muted-foreground: 90 20% 40%;
 
-    --accent: 75 18% 60%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 30 55% 70%;
+    --accent-foreground: 90 40% 12%;
+
+    --tertiary: 85 25% 65%;
+    --tertiary-foreground: 90 40% 12%;
+
+    --gold: 45 80% 65%;
+    --gold-foreground: 90 40% 12%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 35 20% 85%;
-    --input: 35 20% 85%;
-    --ring: 90 30% 15%;
+    --border: 35 18% 82%;
+    --input: 35 18% 88%;
+    --ring: 90 40% 12%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -99,7 +105,9 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.01em;
   }
 
   h1,
@@ -108,6 +116,8 @@
   h4,
   h5,
   h6 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    letter-spacing: -0.02em;
   }
 }
